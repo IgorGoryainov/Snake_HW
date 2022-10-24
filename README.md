@@ -33,6 +33,8 @@
 <li class="has-line-data" data-line-start="36" data-line-end="38">в</li>
 </ul>
 <h2 class="code-line" data-line-start=38 data-line-end=39><a id="_38"></a>Управление</h2>
+<p class="has-line-data" data-line-start="45" data-line-end="46">или</p>
+<table class="table table-striped table-bordered">
 <thead>
 <tr>
 <th>Кнопка</th>
