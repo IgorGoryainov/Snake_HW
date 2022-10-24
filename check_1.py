@@ -13,7 +13,7 @@ process.set_surface()
 player = Player()
 apple = Apple()
 process.all_sprites.add(player)
-process.all_sprites.add((apple))
+process.all_sprites.add(apple)
 
 while running[0]:
     process.get_events(running)
