@@ -1,4 +1,5 @@
 import pygame
+import Player
 
 running = True
 
@@ -32,20 +33,10 @@ class GameProcess:
         all_sprites.draw(self.screen)
 
 
-class Player(pygame.sprite.Sprite):
-    def __init__(self):
-        pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.Surface((25, 25))
-        self.image.fill((255, 51, 102))
-        self.rect = self.image.get_rect()
-        self.rect.center = (100, 100)
-
-    def update(self):
-        self.rect.x += 5
 
 
 process = GameProcess()
-player = Player()
+player = Player.Player()
 all_sprites.add(player)
 
 process.init_game()
