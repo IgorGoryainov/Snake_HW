@@ -1,3 +1,4 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>PySnake.md</title><style></style></head><body id="preview">
 <h1 class="code-line" data-line-start=0 data-line-end=1><a id="PySnake_0"></a>PySnake</h1>
 <hr>
 <p class="has-line-data" data-line-start="2" data-line-end="3">Игра “Змейка” на Python 3.0</p>
@@ -10,22 +11,36 @@
 <li class="has-line-data" data-line-start="9" data-line-end="11">Красная точка (еда для змеечки)</li>
 </ul>
 <p class="has-line-data" data-line-start="11" data-line-end="12">Змеечка управляется стрелками с клавиатуры. Основная цель — накормить змеечку.</p>
-<h2 class="code-line" data-line-start=12 data-line-end=13><a id="_12"></a>Запуск</h2>
-<p class="has-line-data" data-line-start="13" data-line-end="14">Что-то делаем…</p>
-<p class="has-line-data" data-line-start="15" data-line-end="16">Параметры</p>
+<h2 class="code-line" data-line-start=13 data-line-end=14><a id="check_1py_13"></a>check_1.py</h2>
+<p class="has-line-data" data-line-start="15" data-line-end="16">…</p>
+<h2 class="code-line" data-line-start=17 data-line-end=18><a id="Playerpyd_17"></a>Player.pyd</h2>
+<p class="has-line-data" data-line-start="19" data-line-end="24">…<br>
+<code>method_1</code><br>
+…<br>
+<code>method_2</code><br>
+…</p>
+<h2 class="code-line" data-line-start=24 data-line-end=25><a id="Applepyd_24"></a>Apple.pyd</h2>
+<p class="has-line-data" data-line-start="25" data-line-end="30">…<br>
+<code>method_1</code><br>
+…<br>
+<code>method_2</code><br>
+…</p>
+<h2 class="code-line" data-line-start=30 data-line-end=31><a id="_30"></a>Запуск</h2>
+<p class="has-line-data" data-line-start="31" data-line-end="32">Что-то делаем…</p>
+<p class="has-line-data" data-line-start="33" data-line-end="34">Параметры</p>
 <ul>
-<li class="has-line-data" data-line-start="16" data-line-end="17">а</li>
-<li class="has-line-data" data-line-start="17" data-line-end="18">б</li>
-<li class="has-line-data" data-line-start="18" data-line-end="20">в</li>
+<li class="has-line-data" data-line-start="34" data-line-end="35">а</li>
+<li class="has-line-data" data-line-start="35" data-line-end="36">б</li>
+<li class="has-line-data" data-line-start="36" data-line-end="38">в</li>
 </ul>
-<h2 class="code-line" data-line-start=20 data-line-end=21><a id="_20"></a>Управление</h2>
+<h2 class="code-line" data-line-start=38 data-line-end=39><a id="_38"></a>Управление</h2>
 <ul>
-<li class="has-line-data" data-line-start="22" data-line-end="23">А -</li>
-<li class="has-line-data" data-line-start="23" data-line-end="24">D -</li>
-<li class="has-line-data" data-line-start="24" data-line-end="25">Esc -</li>
-<li class="has-line-data" data-line-start="25" data-line-end="27">Enter -</li>
+<li class="has-line-data" data-line-start="40" data-line-end="41">А -</li>
+<li class="has-line-data" data-line-start="41" data-line-end="42">D -</li>
+<li class="has-line-data" data-line-start="42" data-line-end="43">Esc -</li>
+<li class="has-line-data" data-line-start="43" data-line-end="45">Enter -</li>
 </ul>
-<p class="has-line-data" data-line-start="27" data-line-end="28">или</p>
+<p class="has-line-data" data-line-start="45" data-line-end="46">или</p>
 <table class="table table-striped table-bordered">
 <thead>
 <tr>
@@ -53,7 +68,7 @@
 </tbody>
 </table>
 <blockquote>
-<p class="has-line-data" data-line-start="36" data-line-end="42">Тут можно что-то красиво написать<br>
+<p class="has-line-data" data-line-start="54" data-line-end="60">Тут можно что-то красиво написать<br>
 как заметочку для чайников или<br>
 я не знаю что, но выгялит красиво,<br>
 поэтому оставлю это здесь и напишу<br>
