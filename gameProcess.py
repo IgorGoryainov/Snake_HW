@@ -1,11 +1,12 @@
 import pygame
+import settings
 
 
 class GameProcess:
     def __init__(self):
-        self.WIDTH = 360
-        self.HEIGHT = 480
-        self.FPS = 15
+        self.WIDTH = settings.WIDTH
+        self.HEIGHT = settings.HEIGHT
+        self.FPS = settings.FPS
         self.all_sprites = pygame.sprite.Group()
         self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
         self.clock = pygame.time.Clock()

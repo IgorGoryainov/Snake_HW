@@ -1,0 +1,3 @@
+WIDTH = 360
+HEIGHT = 480
+FPS = 15
