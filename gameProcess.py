@@ -1,11 +1,14 @@
 import pygame
+import settings
+
+import settings
 
 
 class GameProcess:
     def __init__(self):
-        self.WIDTH = 360
-        self.HEIGHT = 480
-        self.FPS = 15
+        self.WIDTH = settings.WIDTH
+        self.HEIGHT = settings.HEIGHT
+        self.FPS = settings.FPS
         self.all_sprites = pygame.sprite.Group()
         self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
         self.clock = pygame.time.Clock()
@@ -20,6 +23,15 @@ class GameProcess:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running[0] = False
+            if event.type == pygame.KEYDOWN:
+                if event.key == ord('w'):
+                    return "up"
+                elif event.key == ord('s'):
+                    return "down"
+                elif event.key == ord('a'):
+                    return "left"
+                elif event.key == ord('d'):
+                    return "right"
 
     def update_screen(self):
         self.clock.tick(self.FPS)
