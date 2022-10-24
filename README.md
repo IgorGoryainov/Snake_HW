@@ -1,4 +1,3 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>PySnake.md</title><style></style></head><body id="preview">
 <h1 class="code-line" data-line-start=0 data-line-end=1><a id="PySnake_0"></a>PySnake</h1>
 <hr>
 <p class="has-line-data" data-line-start="2" data-line-end="3">Игра “Змейка” на Python 3.0</p>
