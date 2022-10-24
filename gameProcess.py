@@ -1,6 +1,8 @@
 import pygame
 import settings
 
+import settings
+
 
 class GameProcess:
     def __init__(self):
@@ -21,6 +23,14 @@ class GameProcess:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running[0] = False
+            elif event.type == pygame.K_w:
+                return "up"
+            elif event.type == pygame.K_s:
+                return "down"
+            elif event.type == pygame.K_a:
+                return "left"
+            elif event.type == pygame.K_d:
+                return "right"
 
     def update_screen(self):
         self.clock.tick(self.FPS)
