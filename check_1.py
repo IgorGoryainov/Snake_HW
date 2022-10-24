@@ -1,51 +1,22 @@
 import pygame
-import Player
+from Player import Player
+from gameProcess import GameProcess
 
-running = True
+running = [True]
 
 all_sprites = pygame.sprite.Group()
 
-class GameProcess:
-    def __init__(self):
-        self.WIDTH = 360
-        self.HEIGHT = 480
-        self.FPS = 15
-        self.clock = pygame.time.Clock()
-
-    def init_game(self):
-        pygame.init()
-
-    def set_surface(self):
-        self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
-        pygame.display.set_caption("Snake")
-        self.screen.fill((204, 255, 255))
-
-    def get_events(self):
-        global running
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-
-    def update_screen(self):
-        global all_sprites
-        pygame.display.flip()
-        self.clock.tick(self.FPS)
-        all_sprites.draw(self.screen)
-
-
-
-
 process = GameProcess()
-player = Player.Player()
+player = Player()
 all_sprites.add(player)
 
 process.init_game()
 process.set_surface()
 
-while running:
+while running[0]:
     player.update()
-    process.get_events()
-    process.update_screen()
+    process.get_events(running)
+    process.update_screen(all_sprites)
 
 
 pygame.quit()
