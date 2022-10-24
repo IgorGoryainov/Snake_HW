@@ -1,22 +1,23 @@
 import pygame
 from Player import Player
+from Apple import Apple
 from gameProcess import GameProcess
 
 running = [True]
 
-all_sprites = pygame.sprite.Group()
 
 process = GameProcess()
-player = Player()
-all_sprites.add(player)
-
 process.init_game()
 process.set_surface()
 
+player = Player()
+apple = Apple()
+process.all_sprites.add(player)
+process.all_sprites.add((apple))
+
 while running[0]:
-    player.update()
     process.get_events(running)
-    process.update_screen(all_sprites)
+    process.update_screen()
 
 
 pygame.quit()
