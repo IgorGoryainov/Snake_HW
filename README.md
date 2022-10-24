@@ -33,14 +33,6 @@
 <li class="has-line-data" data-line-start="36" data-line-end="38">в</li>
 </ul>
 <h2 class="code-line" data-line-start=38 data-line-end=39><a id="_38"></a>Управление</h2>
-<ul>
-<li class="has-line-data" data-line-start="40" data-line-end="41">А -</li>
-<li class="has-line-data" data-line-start="41" data-line-end="42">D -</li>
-<li class="has-line-data" data-line-start="42" data-line-end="43">Esc -</li>
-<li class="has-line-data" data-line-start="43" data-line-end="45">Enter -</li>
-</ul>
-<p class="has-line-data" data-line-start="45" data-line-end="46">или</p>
-<table class="table table-striped table-bordered">
 <thead>
 <tr>
 <th>Кнопка</th>
