@@ -5,8 +5,9 @@ class GameProcess:
     def __init__(self):
         self.WIDTH = 360
         self.HEIGHT = 480
-        self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
         self.FPS = 15
+        self.all_sprites = pygame.sprite.Group()
+        self.screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
         self.clock = pygame.time.Clock()
 
     def init_game(self):
@@ -14,14 +15,15 @@ class GameProcess:
 
     def set_surface(self):
         pygame.display.set_caption("Snake")
-        self.screen.fill((204, 255, 255))
 
     def get_events(self, running):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running[0] = False
 
-    def update_screen(self, all_sprites):
-        pygame.display.flip()
+    def update_screen(self):
         self.clock.tick(self.FPS)
-        all_sprites.draw(self.screen)
+        self.screen.fill((204, 255, 255))
+        self.all_sprites.update()
+        self.all_sprites.draw(self.screen)
+        pygame.display.flip()
