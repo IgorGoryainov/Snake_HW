@@ -23,14 +23,15 @@ class GameProcess:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running[0] = False
-            elif event.type == pygame.K_w:
-                return "up"
-            elif event.type == pygame.K_s:
-                return "down"
-            elif event.type == pygame.K_a:
-                return "left"
-            elif event.type == pygame.K_d:
-                return "right"
+            if event.type == pygame.KEYDOWN:
+                if event.key == ord('w'):
+                    return "up"
+                elif event.key == ord('s'):
+                    return "down"
+                elif event.key == ord('a'):
+                    return "left"
+                elif event.key == ord('d'):
+                    return "right"
 
     def update_screen(self):
         self.clock.tick(self.FPS)
