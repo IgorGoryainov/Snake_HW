@@ -1,5 +1,5 @@
 import pygame
-from random import randint, choice
+from random import choice
 import settings
 
 
@@ -14,8 +14,8 @@ class Apple(pygame.sprite.Sprite):
 
     def update(self):
         if self.eaten:
-            positions_x = list(range(0, settings.WIDTH, 30))
-            positions_y = list(range(0, settings.HEIGHT, 30))
+            positions_x = list(range(int(0 + settings.snake_size), int(settings.WIDTH - settings.snake_size), int(settings.snake_size)))
+            positions_y = list(range(int(0 + settings.snake_size), int(settings.HEIGHT - settings.snake_size), int(settings.snake_size)))
             self.rect.centerx = choice(positions_x)
             self.rect.centery = choice(positions_y)
             self.eaten = False

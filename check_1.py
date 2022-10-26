@@ -21,6 +21,7 @@ while running[0]:
     if player.check_eaten(apple.rect.centerx, apple.rect.centery):
         apple.eat()
     directions = process.get_events(running)
+    running[0] = not player.check_crash()
     if directions:
         player.moving_direction = directions
     process.update_screen()
