@@ -1,1 +1,18 @@
-.idea
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment
+.env
+venv/
+env/
+
+# Build
+dist/
+build/
+*.egg-info/

@@ -1,8 +1,6 @@
 import pygame
 import settings
 
-import settings
-
 
 class GameProcess:
     def __init__(self):

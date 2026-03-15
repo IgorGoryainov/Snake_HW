@@ -1,7 +1,7 @@
 import pygame
-from Player import Player
-from Apple import Apple
-from gameProcess import GameProcess
+from player import Player
+from apple import Apple
+from game_process import GameProcess
 
 running = [True]
 

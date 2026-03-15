@@ -1,6 +1,6 @@
 import pygame
 import settings
-from random import randint, choice
+from random import choice
 
 directions = ['right', 'left', 'forward', 'down']
 
@@ -35,12 +35,6 @@ class Player(pygame.sprite.Sprite):
     def set_screen(self, screen):
         self.screen = screen
 
-    def test(self):
-        for i in range(self.score):
-            self.tail.insert(0, [self.rect.centerx, self.rect.centery])
-        for i in range(self.score):
-            self.tail.pop()
-
     def eat_apple(self):
         self.tail.insert(0, [self.rect.centerx, self.rect.centery])
 
@@ -48,10 +42,7 @@ class Player(pygame.sprite.Sprite):
         if (self.rect.centerx == apple_x) and (self.rect.centery == apple_y):
             self.eat_apple()
             self.score += 1
-            print("kek")
             return True
-
-
 
     def draw_tail(self):
         for elem in self.tail:
